@@ -22,7 +22,6 @@ Unlike PCA, LDA uses bases that are not orthogonal to encode discriminating data
 
 It tries to get a non-linear structure in the provided data. The technique assumes that objects are probably flat on smaller scale. It works by finding nearest neighbours. It then computes weight that helps reconstruc the datapoints, inturn minimizing the equation of cost with constrained linear fits. Finally, the vectors are computed that are best reconstructed by given weights. 
 
-
 2. Ensemble Model
 The ensemble model would make use of multiple dimension reduction techniques to improve the performance of the facial recognition algorithm as represented in algorithm 1. Once the data is preprocessed, and split for train and test, it is then passed through two dimension reduction techniques. These techniques reduce the misleading data, noise and redundant features, that helps in the final prediction. Making use of multiple dimension reduction technique helps reduce the noise/external factors that exists in the images such as occlusion, illumination. Once dimensions are reduced by using both the techniques, feature vectors are extracted from the images. These feature vectors are passed through the dense cnn layer which helps train the model on given images and inturn predict the face as shown in figure 3. 
 
